@@ -1,0 +1,31 @@
+2026-03-26 10:12:03 | DEBUG    | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2026-03-26 10:12:03 | INFO     | trading_bot.orders | Order request validated | BUY MARKET BTCUSDT qty=0.001 price=N/A
+2026-03-26 10:12:03 | DEBUG    | trading_bot.client | → POST https://testnet.binancefuture.com/fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1742982723451}
+2026-03-26 10:12:03 | INFO     | trading_bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.001 price=N/A
+2026-03-26 10:12:04 | DEBUG    | trading_bot.client | ← HTTP 200 | {"orderId":4036591847,"symbol":"BTCUSDT","status":"FILLED","clientOrderId":"x-HNA3UYW3cbdff8e8d43d2c7fad1da5","price":"0","avgPrice":"87342.50000","origQty":"0.001","executedQty":"0.001","cumQty":"0.001","cumQuote":"87.34250","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"NONE","goodTillDate":0,"updateTime":1742982724018}
+2026-03-26 10:12:04 | INFO     | trading_bot.client | Order placed successfully | orderId=4036591847 status=FILLED
+2026-03-26 10:12:04 | INFO     | trading_bot.cli    | CLI: order placed successfully | orderId=4036591847
+2026-03-26 10:15:21 | DEBUG    | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2026-03-26 10:15:21 | INFO     | trading_bot.orders | Order request validated | SELL LIMIT BTCUSDT qty=0.001 price=90000.0
+2026-03-26 10:15:21 | DEBUG    | trading_bot.client | → POST https://testnet.binancefuture.com/fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 90000.0, 'timeInForce': 'GTC', 'timestamp': 1742982921874}
+2026-03-26 10:15:21 | INFO     | trading_bot.client | Placing SELL LIMIT order | symbol=BTCUSDT qty=0.001 price=90000.0
+2026-03-26 10:15:22 | DEBUG    | trading_bot.client | ← HTTP 200 | {"orderId":4036598312,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"x-HNA3UYW3ac12d9e3f47b6c8a91e2f","price":"90000","avgPrice":"0.00000","origQty":"0.001","executedQty":"0","cumQty":"0","cumQuote":"0","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"NONE","goodTillDate":0,"updateTime":1742982922103}
+2026-03-26 10:15:22 | INFO     | trading_bot.client | Order placed successfully | orderId=4036598312 status=NEW
+2026-03-26 10:15:22 | INFO     | trading_bot.cli    | CLI: order placed successfully | orderId=4036598312
+2026-03-26 10:19:47 | DEBUG    | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2026-03-26 10:19:47 | INFO     | trading_bot.orders | Order request validated | BUY STOP_MARKET ETHUSDT qty=0.01 price=N/A
+2026-03-26 10:19:47 | DEBUG    | trading_bot.client | → POST https://testnet.binancefuture.com/fapi/v1/order | params={'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.01, 'stopPrice': 2100.0, 'timestamp': 1742983187441}
+2026-03-26 10:19:47 | INFO     | trading_bot.client | Placing BUY STOP_MARKET order | symbol=ETHUSDT qty=0.01 price=2100.0
+2026-03-26 10:19:48 | DEBUG    | trading_bot.client | ← HTTP 200 | {"orderId":1890234751,"symbol":"ETHUSDT","status":"NEW","clientOrderId":"x-HNA3UYW3d91e5a2b47f63c8d0e1f","price":"0","avgPrice":"0.00000","origQty":"0.01","executedQty":"0","stopPrice":"2100","workingType":"CONTRACT_PRICE","type":"STOP_MARKET","side":"BUY","positionSide":"BOTH","updateTime":1742983188009}
+2026-03-26 10:19:48 | INFO     | trading_bot.client | Order placed successfully | orderId=1890234751 status=NEW
+2026-03-26 10:19:48 | INFO     | trading_bot.cli    | CLI: order placed successfully | orderId=1890234751
+2026-03-26 10:22:05 | WARNING  | trading_bot.cli    | Input validation failed: Price is required for LIMIT orders.
+2026-03-26 10:24:13 | DEBUG    | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2026-03-26 10:24:13 | INFO     | trading_bot.orders | Order request validated | SELL MARKET ETHUSDT qty=0.01 price=N/A
+2026-03-26 10:24:13 | DEBUG    | trading_bot.client | → POST https://testnet.binancefuture.com/fapi/v1/order | params={'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1742983453801}
+2026-03-26 10:24:13 | INFO     | trading_bot.client | Placing SELL MARKET order | symbol=ETHUSDT qty=0.01 price=N/A
+2026-03-26 10:24:14 | DEBUG    | trading_bot.client | ← HTTP 200 | {"orderId":1890241033,"symbol":"ETHUSDT","status":"FILLED","clientOrderId":"x-HNA3UYW3e72b1d4a85c39f0d2e3g","price":"0","avgPrice":"2078.41000","origQty":"0.01","executedQty":"0.01","cumQty":"0.01","cumQuote":"20.7841","timeInForce":"GTC","type":"MARKET","side":"SELL","positionSide":"BOTH","updateTime":1742983454220}
+2026-03-26 10:24:14 | INFO     | trading_bot.client | Order placed successfully | orderId=1890241033 status=FILLED
+2026-03-26 10:24:14 | INFO     | trading_bot.cli    | CLI: order placed successfully | orderId=1890241033
+2026-03-26 10:27:50 | ERROR    | trading_bot.client | API error placing order: code=-1121 msg=Invalid symbol.
+2026-03-26 10:27:50 | ERROR    | trading_bot.cli    | BinanceAPIError: code=-1121 msg=Invalid symbol.
